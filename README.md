@@ -28,4 +28,6 @@ The `schoolPhoneNumberExists` query type takes the following arguments:
     * Local Number: The specific number assigned to a particular phone line.
 
 An example is: "+254123456789"   
-The `schoolPhoneNumberExists` return the type `PhoneNumberExists` that includes the following fields:
+The `schoolPhoneNumberExists` return the type `PhoneNumberExists` that includes the following fields:  
+* `verified` : `Boolean`. Shows `true` if verified.
+* `unverified`: `Boolean`. Shows `true` if unverified.
