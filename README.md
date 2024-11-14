@@ -4,6 +4,7 @@ This project provides a detailed documentation of eardrum-server API. Overally, 
 * **OTP**    : The project leverages One-Time-Password for multi-factor authentication (MFA) process that requires the user to enter a code sent to their phone number alongside their account credentials.
 
 ## Endpoint
-This API only includes a single endpoint
+The API only includes a single endpoint
 
 ## Query Types:
+The API includes the following query types: 
