@@ -5,3 +5,5 @@ This project provides a detailed documentation of eardrum-server API. Overally, 
 
 ## Endpoint
 This API only includes a single endpoint
+
+## Query Types:
