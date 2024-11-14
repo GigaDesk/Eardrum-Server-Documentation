@@ -34,5 +34,5 @@ The `schoolPhoneNumberExists` return the type `PhoneNumberExists` that includes 
 Here is a sample query:
 
   query checkPhoneNumber {
-    schoolPhoneNumberExists(phone_number: "+254756142241") {verifiedunverified}}
+  schoolPhoneNumberExists(phone_number: "+254756142241") {verifiedunverified}}
 
