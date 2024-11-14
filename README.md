@@ -32,10 +32,5 @@ The `schoolPhoneNumberExists` return the type `PhoneNumberExists` that includes 
 * `verified` : `Boolean`. Shows `true` if verified.
 * `unverified`: `Boolean`. Shows `true` if unverified.
 Here is a sample query:
-`query checkPhoneNumber {
-  schoolPhoneNumberExists(phone_number: "+254756142241") {
-    verified
-    unverified
-  }
-}`
+query checkPhoneNumber {schoolPhoneNumberExists(phone_number: "+254756142241") {verifiedunverified}}
 
