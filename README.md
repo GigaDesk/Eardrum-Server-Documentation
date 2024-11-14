@@ -6,7 +6,7 @@ This project provides a detailed documentation of eardrum-server API. Overally, 
 ## Endpoint
 The API only includes a single endpoint
 
-## Query Types:
+## Query Types
 The API includes the following query types: 
 
 ### schoolPhoneNumberExists:
