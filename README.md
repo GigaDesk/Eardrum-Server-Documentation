@@ -8,3 +8,5 @@ The API only includes a single endpoint
 
 ## Query Types:
 The API includes the following query types: 
+
+### * schoolPhoneNumberExists
