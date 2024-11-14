@@ -26,3 +26,4 @@ The `schoolPhoneNumberExists` query type takes the following arguments:
     * Country Code: A number that identifies the country. For example, the US country code is 1, the UK is 44, and Kenya is 254.
     * Area Code: A numerical code that identifies a specific geographic area within a country.
     * Local Number: The specific number assigned to a particular phone line.
+ An example is: "+254123456789"
