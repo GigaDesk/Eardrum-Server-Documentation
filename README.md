@@ -10,3 +10,4 @@ The API only includes a single endpoint
 The API includes the following query types: 
 
 ### schoolPhoneNumberExists:
+The `schoolPhoneNumberExists`
