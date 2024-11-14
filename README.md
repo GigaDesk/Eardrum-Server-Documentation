@@ -17,7 +17,7 @@ The `schoolPhoneNumberExists` query type executes following tasks:
   A verified phone number is one that has been submitted by a school that went on to complete the multi-factor authentication (MFA) process, by entering the correct OTP 
   sent to their phone number. On the other hand, an unverified phone number is one that school a school is yet to complete MFA process.
 
-  The `schoolPhoneNumberExists` query type takes the following arguments:
+The `schoolPhoneNumberExists` query type takes the following arguments:
 * `phone_number` : The specific phone number that one wishes to check its existence. The argument must follow the following rules:
   * It must be a `string` data type.
   * It Cannot be omitted (non-nullable).
