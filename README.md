@@ -21,4 +21,4 @@ The `schoolPhoneNumberExists` query type takes the following arguments:
 * `phone_number` : The specific phone number that one wishes to check its existence. The argument must follow the following rules:
   * It must be a `string` data type.
   * It Cannot be omitted (non-nullable).
-  * It must be in the format of: country code 
+  * It must be in E.164 format, which includes the following components:
