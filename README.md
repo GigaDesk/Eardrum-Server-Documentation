@@ -12,6 +12,7 @@ The API includes the following query types:
 ### schoolPhoneNumberExists:
 The `schoolPhoneNumberExists` query type executes following tasks:
 * Checking if a phone_number entry already exists
-* Checking the state in which the phone number exists. In this case, whether it is verified or not. A verified phone number is one that has been submitted by a school that went on to complete the multi-factor authentication (MFA) process, by entering the correct OTP sent to their phone number. On the other hand, an unverified phone number is one that school a school is yet to complete MFA process.
+* Checking the state in which the phone number exists. In this case, whether it is verified or not.
+A verified phone number is one that has been submitted by a school that went on to complete the multi-factor authentication (MFA) process, by entering the correct OTP sent to their phone number. On the other hand, an unverified phone number is one that school a school is yet to complete MFA process.
 takes the following arguments:
 * `phone_number` : T
