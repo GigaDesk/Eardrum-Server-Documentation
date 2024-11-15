@@ -51,4 +51,8 @@ The `createSchool` mutation type executes following tasks:
 
 The `createSchool` query type takes the following arguments:
 * `input` : The new school's data which is of `NewSchool` data type, that includes the following fields:
-  * `name`:`string` and non-nullable
+  * `name`: `string` and non-nullable
+  * `phone_number`: `string` and non-nullable
+  * `password`: `string` and non-nullable
+  * `badge` : `string` and nullable
+  * `Website`: `string` and nullable
