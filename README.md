@@ -56,6 +56,7 @@ The `createSchool` query type takes the following arguments:
   * `password`: represents the school's passwoed.`string` and non-nullable
   * `badge` : represents the school's logo image url. `string` and nullable
   * `Website`: represents the school's website url.`string` and nullable
+
 The `schoolPhoneNumberExists` returns the type `PhoneNumberExists` that includes the following fields:  
-* `verified` : `Boolean`. Returns `true` if verified.
-* `unverified`: `Boolean`. Returns `true` if unverified.
+  * `verified` : `Boolean`. Returns `true` if verified.
+  * `unverified`: `Boolean`. Returns `true` if unverified.
