@@ -20,7 +20,7 @@ sent to their phone number. On the other hand, an unverified phone number is one
 The `schoolPhoneNumberExists` query type takes the following arguments:
 * `phone_number` : The specific phone number that one wishes to check its existence. The argument must follow the following rules:
   * It must be a `string` data type.
-  * It Cannot be omitted (non-nullable).
+  * It cannot be omitted (non-nullable).
   * It must be in E.164 format
 
 An example is: "+254123456789"
