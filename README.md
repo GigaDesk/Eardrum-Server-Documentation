@@ -51,8 +51,8 @@ The `createSchool` mutation type executes following tasks:
 
 The `createSchool` query type takes the following arguments:
 * `input` : The new school's data which is of `NewSchool` data type, that includes the following fields:
-  * `name`: `string` and non-nullable
-  * `phone_number`: `string` and non-nullable
-  * `password`: `string` and non-nullable
-  * `badge` : `string` and nullable
-  * `Website`: `string` and nullable
+  * `name`: represents name of the school. `string` and non-nullable
+  * `phone_number`: represents the school's official phone number. `string` and non-nullable
+  * `password`: represents the school's passwoed.`string` and non-nullable
+  * `badge` : represents the school's logo image url. `string` and nullable
+  * `Website`: represents the school's website url.`string` and nullable
