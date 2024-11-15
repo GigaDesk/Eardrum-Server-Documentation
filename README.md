@@ -48,3 +48,6 @@ The API includes the following mutation types:
 The `createSchool` mutation type executes following tasks:
 * Signs up anew school to the system.
 * Sends out an OTP code for phone number verification.
+
+The `createSchool` query type takes the following arguments:
+* `input` : The new schools data which is of `NewSchool` data type, that includes:
