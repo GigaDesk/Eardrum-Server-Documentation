@@ -60,8 +60,8 @@ The `createSchool` query type takes the following arguments:
 The `createSchool` returns the type `UnverifiedSchool` that includes the following fields:  
   * `id` : The school record's unique primary key. `integer` and non-nullable
   * `createdAt`: The specific time of the school record's creation. `Time` and non-nullable
-  * `updatedAt`: The specific time when the school record was updated. Also, includes the timeit was created. `Time` and non-nullable
-  * `deletedAt`: The specific time when the school record was created.`SoftDelete` and nullable
+  * `updatedAt`: The specific time when the school record was updated. Also, includes the time it was created. `Time` and non-nullable
+  * `deletedAt`: The specific time when the school record was deleted.`SoftDelete` and nullable
   * `name` : The name the school created. `string` and non-nullable. 
   * `phone_number`: The phone number of the school created. `string` and non-nullable
   * `password` : The hashed password of the school created. `string` and non-nullable
