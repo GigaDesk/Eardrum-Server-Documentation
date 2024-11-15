@@ -116,3 +116,21 @@ Here is a sample response:
   }
 }
 ```
+```
+ mutation sendCode {   
+    sendCode(phone_number: "+254756142241") {    
+      phone_number
+      success
+     }    
+ }
+```
+```
+{
+  "data": {
+    "sendCode": {
+      "phone_number": "+254756142241",
+      "success": true
+    }
+  }
+}
+```
