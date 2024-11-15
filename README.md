@@ -35,5 +35,11 @@ Here is a sample query:
   
   schoolPhoneNumberExists( phone_number: "+254756142241" ) {    
   
-  verifiedunverified}}
+  verified   
+  
+  unverified  
+  
+  }   
+  
+  }
 
