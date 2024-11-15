@@ -53,10 +53,17 @@ The `createSchool` query type takes the following arguments:
 * `input` : The new school's data which is of `NewSchool` data type, that includes the following fields:
   * `name`: represents name of the school. `string` and non-nullable
   * `phone_number`: represents the school's official phone number. `string` and non-nullable. Must be in E.164 format
-  * `password`: represents the school's passwoed.`string` and non-nullable
-  * `badge` : represents the school's logo image url. `string` and nullable
+  * `password`: represents the school's password.`string` and non-nullable
+  * `badge` : represents the schools logo's image url. `string` and nullable
   * `Website`: represents the school's website url.`string` and nullable
 
-The `schoolPhoneNumberExists` returns the type `PhoneNumberExists` that includes the following fields:  
-  * `verified` : `Boolean`. Returns `true` if verified.
-  * `unverified`: `Boolean`. Returns `true` if unverified.
+The `createSchool` returns the type `UnverifiedSchool` that includes the following fields:  
+  * `id` : The school record's unique primary key. `integer` and non-nullable
+  * `createdAt`: The specific time of the school record's creation. `Time` and non-nullable
+  * `updatedAt`: The specific time when the school record was updated. Also, includes the timeit was created. `Time` and non-nullable
+  * `deletedAt`: The specific time when the school record was created.`SoftDelete` and nullable
+  * `name` : The name the school created. `string` and non-nullable. 
+  * `phone_number`: The phone number of the school created. `string` and non-nullable
+  * `password` : The hashed password of the school created. `string` and non-nullable
+  * `badge` : The image url of the logo of the school created. `string` and nullable.
+  * `Website`: The website url of the school created. `string` and nullable.
