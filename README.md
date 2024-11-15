@@ -79,3 +79,40 @@ The `createSchool` returns the type `UnverifiedSchool` that includes the followi
   * `password` : The hashed password of the school created. `string` and non-nullable
   * `badge` : The image url of the logo of the school created. `string` and nullable.
   * `Website`: The website url of the school created. `string` and nullable.
+
+Here is a sample mutation:   
+
+```
+ mutation createSchool {   
+    createSchool( input: {name: "Kisii School", phone_number: "+254756142241", password:"Kisii@2024", Website:"www.kisiischool.ac.ke"} ) {    
+      id
+      createdAt
+      updatedAt
+      deletedAt
+      name
+      phone_number
+      password
+      badge
+      Website
+     }    
+ }
+```
+Here is a sample response:   
+
+```
+{
+  "data": {
+    "createSchool": {
+      "id": 1,
+      "createdAt": "2024-11-15T12:05:02.906434553+03:00",
+      "updatedAt": "2024-11-15T12:05:02.906434553+03:00",
+      "deletedAt": null,
+      "name": "Kisii School",
+      "phone_number": "+254756142241",
+      "password": "$2a$14$0pT2rHYKopCGIdEO5.XeQOnspwBGgpbvoWRpdTBLzG5GwwmL910W6",
+      "badge": null,
+      "Website": "www.kisiischool.ac.ke"
+    }
+  }
+}
+```
