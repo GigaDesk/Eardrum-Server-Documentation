@@ -88,7 +88,7 @@ Here is a sample mutation:
 GraphQL
 
  mutation createSchool {   
-    createSchool( input: {name: "Kisii School", phone_number: "+254756142241", password:"Kisii@2024", Website:"www.kisiischool.ac.ke"} ) {    
+    createSchool( input: {name: "Kisii School", phone_number: "+254123456789", password:"Kisii@2024", Website:"www.kisiischool.ac.ke"} ) {    
       id
       createdAt
       updatedAt
@@ -114,7 +114,7 @@ JSON
       "updatedAt": "2024-11-15T12:05:02.906434553+03:00",
       "deletedAt": null,
       "name": "Kisii School",
-      "phone_number": "+254756142241",
+      "phone_number": "+254123456789",
       "password": "$2a$14$0pT2rHYKopCGIdEO5.XeQOnspwBGgpbvoWRpdTBLzG5GwwmL910W6",
       "badge": null,
       "Website": "www.kisiischool.ac.ke"
@@ -146,7 +146,7 @@ Here is a sample mutation:
 GraphQL
 
  mutation verifySchool {   
-    verifySchool(input:{phone_number: "+254756142241", otp:"181794"}) {    
+    verifySchool(input:{phone_number: "+254123456789", otp:"181794"}) {    
       id
       createdAt
       updatedAt
@@ -171,7 +171,7 @@ JSON
       "updatedAt": "2024-11-15T12:23:04.70439981+03:00",
       "deletedAt": null,
       "name": "Kisii School",
-      "phone_number": "+254756142241",
+      "phone_number": "+254123456789",
       "password": "$2a$14$0pT2rHYKopCGIdEO5.XeQOnspwBGgpbvoWRpdTBLzG5GwwmL910W6",
       "badge": null,
       "Website": "www.kisiischool.ac.ke"
@@ -193,7 +193,7 @@ Here is a sample mutation:
 GraphQL
 
  mutation sendCode {   
-    sendCode(phone_number: "+254756142241") {    
+    sendCode(phone_number: "+2547123456789") {    
       phone_number
       success
      }    
@@ -206,7 +206,7 @@ JSON
 {
   "data": {
     "sendCode": {
-      "phone_number": "+254756142241",
+      "phone_number": "+254123456789",
       "success": true
     }
   }
