@@ -123,25 +123,7 @@ JSON
 }
 ```
 ***Note:*** After the mutation the user (a school in this case) should expect an OTP verification code sent to their phone number.
-### sendCode
-```
- mutation sendCode {   
-    sendCode(phone_number: "+254756142241") {    
-      phone_number
-      success
-     }    
- }
-```
-```
-{
-  "data": {
-    "sendCode": {
-      "phone_number": "+254756142241",
-      "success": true
-    }
-  }
-}
-```
+
 ### verifySchool   
 The `verifySchool` mutation type performs the primary task of transforming a created school record that is yet to be verified into a verified school record.    
 The `verifySchool` mutation type takes an `input` argument that has the following fields:
@@ -197,3 +179,37 @@ JSON
   }
 }
 ```
+### sendCode      
+The `sendCode` mutation type performs the primary task of sending an OTP code to a phone number under the following scenarios:    
+  * A phone number that expects an OTP is yet to receive one.
+  * A phone number received an OTP code but for some reason it got lost
+
+The `sendCode` mutation type takes a `phone_number` argument and returns a `SendCodeStatus` that has the following fields:
+  * `phone_number` : The phone number that should expect an OTP code. `string` and non-nullable
+  * `success`: Whether the `sendCode` mutation was successful. `boolean` and non-nullable.
+
+Here is a sample mutation: 
+```
+GraphQL
+
+ mutation sendCode {   
+    sendCode(phone_number: "+254756142241") {    
+      phone_number
+      success
+     }    
+ }
+```
+Here is a sample response:
+```
+JSON
+
+{
+  "data": {
+    "sendCode": {
+      "phone_number": "+254756142241",
+      "success": true
+    }
+  }
+}
+```
+Once the school receives the OTP code, it can proceed to perform a `verifySchool` mutation.
