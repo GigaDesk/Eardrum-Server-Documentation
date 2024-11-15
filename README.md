@@ -134,3 +134,35 @@ Here is a sample response:
   }
 }
 ```
+```
+ mutation verifySchool {   
+    verifySchool(input:{phone_number: "+254756142241", otp:"181794"}) {    
+      id
+      createdAt
+      updatedAt
+      deletedAt
+      name
+      phone_number
+      password
+      badge
+      Website
+     }    
+ }
+```
+```
+{
+  "data": {
+    "verifySchool": {
+      "id": 1,
+      "createdAt": "2024-11-15T12:23:04.70439981+03:00",
+      "updatedAt": "2024-11-15T12:23:04.70439981+03:00",
+      "deletedAt": null,
+      "name": "Kisii School",
+      "phone_number": "+254756142241",
+      "password": "$2a$14$0pT2rHYKopCGIdEO5.XeQOnspwBGgpbvoWRpdTBLzG5GwwmL910W6",
+      "badge": null,
+      "Website": "www.kisiischool.ac.ke"
+    }
+  }
+}
+```
