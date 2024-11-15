@@ -43,3 +43,8 @@ Here is a sample query:
 ```
 ## Mutation Types
 The API includes the following mutation types: 
+
+### createSchool:
+The `createSchool` mutation type executes following tasks:
+* Signs up anew school to the system.
+* Sends out an OTP code for phone number verification.
