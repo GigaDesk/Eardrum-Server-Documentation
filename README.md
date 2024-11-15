@@ -44,6 +44,8 @@ Here is a sample query:
 Here is a sample response:   
 
 ```
+JSON
+
 {
   "data": {
     "schoolPhoneNumberExists": {
@@ -83,6 +85,8 @@ The `createSchool` returns the type `UnverifiedSchool` that includes the followi
 Here is a sample mutation:   
 
 ```
+GraphQL
+
  mutation createSchool {   
     createSchool( input: {name: "Kisii School", phone_number: "+254756142241", password:"Kisii@2024", Website:"www.kisiischool.ac.ke"} ) {    
       id
@@ -100,6 +104,8 @@ Here is a sample mutation:
 Here is a sample response:   
 
 ```
+JSON
+
 {
   "data": {
     "createSchool": {
@@ -155,6 +161,8 @@ The `verifyschool` returns the type `School` that includes the following fields:
 
 Here is a sample mutation:
 ```
+GraphQL
+
  mutation verifySchool {   
     verifySchool(input:{phone_number: "+254756142241", otp:"181794"}) {    
       id
@@ -171,6 +179,8 @@ Here is a sample mutation:
 ```
 Here is a sample response:
 ```
+JSON
+
 {
   "data": {
     "verifySchool": {
