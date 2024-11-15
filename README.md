@@ -116,6 +116,8 @@ Here is a sample response:
   }
 }
 ```
+***Note:*** After the mutation the user (a school in this case) should expect an OTP verification code sent to their phone number.
+### sendCode
 ```
  mutation sendCode {   
     sendCode(phone_number: "+254756142241") {    
@@ -134,6 +136,24 @@ Here is a sample response:
   }
 }
 ```
+### verifySchool   
+The `verifySchool` mutation type performs the primary task of transforming a created school record that is yet to be verified into a verified school record.    
+The `verifySchool` mutation type takes an `input` argument that has the following fields:
+  * `phone_number`: represents the school's phone number that was entered in a `createSchool` mutation. `string` and non-nullable. Must be in E.164 format
+  * `otp`: represents the OTP code that was sent to the school's phone number.`string` and non-nullable.
+
+The `verifyschool` returns the type `School` that includes the following fields:  
+  * `id` : The school record's unique primary key. `integer` and non-nullable
+  * `createdAt`: The specific time of the school record's creation. `Time` and non-nullable
+  * `updatedAt`: The specific time when the school record was updated. Also, includes the time it was created. `Time` and non-nullable
+  * `deletedAt`: The specific time when the school record was deleted.`SoftDelete` and nullable
+  * `name` : The name the school created. `string` and non-nullable. 
+  * `phone_number`: The phone number of the school created. `string` and non-nullable
+  * `password` : The hashed password of the school created. `string` and non-nullable
+  * `badge` : The image url of the logo of the school created. `string` and nullable.
+  * `Website`: The website url of the school created. `string` and nullable.
+
+Here is a sample mutation:
 ```
  mutation verifySchool {   
     verifySchool(input:{phone_number: "+254756142241", otp:"181794"}) {    
@@ -149,6 +169,7 @@ Here is a sample response:
      }    
  }
 ```
+Here is a sample response:
 ```
 {
   "data": {
