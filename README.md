@@ -41,6 +41,18 @@ Here is a sample query:
       }    
   }
 ```
+Here is a sample response:   
+
+```
+{
+  "data": {
+    "schoolPhoneNumberExists": {
+      "verified": false,
+      "unverified": false
+    }
+  }
+}
+```
 ## Mutation Types
 The API includes the following mutation types: 
 
