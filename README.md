@@ -32,9 +32,10 @@ The `schoolPhoneNumberExists` return the type `PhoneNumberExists` that includes 
 Here is a sample query:
 
  ```
- **GraphQL**
+ GraphQL
+
   query checkPhoneNumber {   
-     schoolPhoneNumberExists( phone_number: "+254756142241" ) {    
+     schoolPhoneNumberExists( phone_number: "+254123456789" ) {    
         verified   
         unverified   
       }    
