@@ -41,3 +41,5 @@ Here is a sample query:
       }    
   }
 ```
+## Mutation Types
+The API includes the following query types: 
