@@ -96,7 +96,7 @@ Here is a sample response:
       "createdAt": "2024-11-15T12:23:04.704399+03:00",
       "updatedAt": "2024-11-15T12:23:04.704399+03:00",
       "name": "Kisii School",
-      "phone_number": "+254756142241",
+      "phone_number": "+254123456789",
       "badge": null,
       "Website": "www.kisiischool.ac.ke"
     }
