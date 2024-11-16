@@ -213,3 +213,43 @@ JSON
 }
 ```
 Once the school receives the OTP code, it can proceed to perform a `verifySchool` mutation.
+
+```
+query SchoolProfile{
+  getSchoolProfile{
+    createdAt
+    updatedAt
+    name
+    phone_number
+    badge
+    Website
+  }
+}
+```
+```
+{
+  "data": {
+    "getSchoolProfile": {
+      "createdAt": "2024-11-15T12:23:04.704399+03:00",
+      "updatedAt": "2024-11-15T12:23:04.704399+03:00",
+      "name": "Kisii School",
+      "phone_number": "+254756142241",
+      "badge": null,
+      "Website": "www.kisiischool.ac.ke"
+    }
+  }
+}
+```
+```
+mutation refreshToken {
+  refreshToken(input:{Token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzE4NjA1MjUsImlkIjoiMSIsInJvbGUiOiJzY2hvb2wifQ.RbrhUyos6vJVbljOLOLWFUEbSnDqExSYlGLjPhq5u68"})
+}
+```
+```
+{
+  "data": {
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzE4NjEwOTUsImlkIjoiMSIsInJvbGUiOiJzY2hvb2wifQ.PNdSAAm-j0CEuJiZO4Szd8nhln9wIhlYk5IajQEvWck"
+  }
+}
+```
+
