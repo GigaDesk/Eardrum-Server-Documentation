@@ -6,6 +6,16 @@ This project provides a detailed documentation of eardrum-server API. Overally, 
 ## Endpoint
 The API only includes a single endpoint: https://eardrum-423271079010.europe-west3.run.app
 
+## Table of Contents
+
+* [Technologies](#technologies)
+* [Frameworks and Libraries](#frameworks-and-libraries)
+* [Third-party Services](#third-party-services)
+* [Architecture](#architecture)
+* [Database Design](#database-design)
+* [Testing and Quality Assurance](#testing-and-quality-assurance)
+* [Security Considerations](#security-considerations)
+
 ## Query Types
 The API includes the following query types: 
 
