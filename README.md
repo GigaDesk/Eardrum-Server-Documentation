@@ -7,7 +7,6 @@ This project provides a detailed documentation of eardrum-server API. Overally, 
 The API only includes a single endpoint: https://eardrum-423271079010.europe-west3.run.app
 
 ## Table of Contents
-
 1. [Query Types](#query-types)
    1.1 [schoolPhoneNumberExists](##schoolPhoneNumberExists)
    
