@@ -8,7 +8,9 @@ The API only includes a single endpoint: https://eardrum-423271079010.europe-wes
 
 ## Table of Contents
 
-* [Query Types](#query-types)
+1. [Query Types](#query-types)
+2. [Mutation Types](#mutation-types)
+  
 * [Frameworks and Libraries](#frameworks-and-libraries)
 * [Third-party Services](#third-party-services)
 * [Architecture](#architecture)
