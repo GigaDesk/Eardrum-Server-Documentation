@@ -9,12 +9,7 @@ The API only includes a single endpoint: https://eardrum-423271079010.europe-wes
 ## Table of Contents
 * [Query Types](#query-types)
   * [schoolPhoneNumberExists](#schoolPhoneNumberExists)  
-  * Sub-item 1.2
-* Item 2
-
-* 
-  * [schoolPhoneNumberExists](#schoolPhoneNumberExists)  
-. [Mutation Types](#mutation-types)
+* [Mutation Types](#mutation-types)
 * [Frameworks and Libraries](#frameworks-and-libraries)
 * [Third-party Services](#third-party-services)
 * [Architecture](#architecture)
