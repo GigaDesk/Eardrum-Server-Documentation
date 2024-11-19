@@ -12,12 +12,13 @@ The API only includes a single endpoint: https://eardrum-423271079010.europe-wes
   * [getSchoolProfile](#getSchoolProfile) 
 * [Mutation Types](#mutation-types)
   * [createSchool](#createSchool)
-* [Frameworks and Libraries](#frameworks-and-libraries)
-* [Third-party Services](#third-party-services)
-* [Architecture](#architecture)
-* [Database Design](#database-design)
-* [Testing and Quality Assurance](#testing-and-quality-assurance)
-* [Security Considerations](#security-considerations)
+  * [verifySchool](#verifySchool)
+  * [sendCode](#sendCode)
+  * [schoolLogin](#schoolLogin)
+  * [forgotSchoolPassword](#forgotSchoolPassword)
+  * [requestSchoolPasswordReset](#requestSchoolPasswordReset)
+  * [resetSchoolPassword](#resetSchoolPassword)
+  * [refreshToken ](#refreshToken)
 
 ## Query Types
 The API includes the following query types: 
