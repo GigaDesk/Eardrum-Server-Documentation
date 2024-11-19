@@ -21,7 +21,7 @@ The `schoolPhoneNumberExists` query type takes the following arguments:
 * `phone_number` : The specific phone number that one wishes to check its existence. The argument must follow the following rules:
   * It must be a `string` data type.
   * It cannot be omitted (non-nullable).
-  * It must be in E.164 format
+  * It must be in [E.164](https://www.twilio.com/docs/glossary/what-e164) format
 
 An example is: "+254123456789"
 
